@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scele=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> Online booking System</title>       
+    </head>
+<body>
+    <header>
+        <img src ="images/logo.png" alt="Logo" class = "logo">
+        <h1>Online booking system</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a = href="#"></a>Home</li>
+            <li><a = href="#"></a>Services</li>
+            <li><a = href="#"></a>Contact</li>
+        </ul>
+    </nav>
+    <div class = "container">
+        <div class="slider">
+            <img src="images/slider1.jpg" alt="Slider1">
+            <img src="images/slider2.jpg" alt="Slider2">
+            <img src="images/slider3.jpg" alt="Slider3">
+        </div>
+        <div class = "announcement">
+            <p>Special announcement: Book now and get 20% off!</p>
+        </div>
+        <h2>Book a service</h2>
+        <div class="booking-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="email" name="email" placeholder="Your email">
+                <input type="tel" name="phone" placeholder="Your phone number">
+                <input type="date" name="date" placeholder="Date">
+                <select name="Service">
+                    <option value="">Select a service</option>
+                    <option value="Service1">Flight</option>
+                    <option value="Service2">Train</option>
+                    <option value="Service3">Bus</option>
+                </select>
+                <input type="submit" value="Book now">
+            </form>
+        </div>
+    </div>
+    <script>
+        //slider
+        let slideIndex=0;
+        showSlides();
+
+        function showSlides(){
+            let i;
+            const slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+            for (i=0; i<slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if(slideIndex > slide.length){slideIndex=1}
+            slides[slideIndex-1].style.display="block";
+            setTimeout(showSlides, 2000);   
+        }
+    </script>
+</body>
+</html>
